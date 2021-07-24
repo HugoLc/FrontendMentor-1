@@ -1,7 +1,17 @@
 body{
   position: relative;
   /* background: hsl(233, 47%, 7%); */
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: white;
 }
+
+h1{
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: bold;
+  font-size: 30px
+}
+
 
 .container{
   position: relative;
@@ -19,7 +29,7 @@ body{
   transform: translate(-50%, -50%);
   width: 1111px;
   height: 446px;
-  background: pink;
+  background: hsl(244, 38%, 16%);
   border-radius: 15px;
 }
 
@@ -28,8 +38,9 @@ body{
 }
 
 footer{
-   position: absolute;
-   bottom: 2%;
-   left: 50%;
-   transform: translateX(-50%);
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: pink;
 }
