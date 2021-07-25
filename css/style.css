@@ -112,3 +112,7 @@ footer{
   transform: translateX(-50%);
   color: lightcyan;
 }
+
+@media screen and (max-width: 480px) {
+
+}
