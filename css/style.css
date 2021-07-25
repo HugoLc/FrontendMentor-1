@@ -80,8 +80,16 @@ h1{
   display: inline-block;
 }
 
+/* .card-img-filter{
+  width: 540px;
+  height:
+} */
+
 .card img{
   border-radius: 0 15px 15px 0;
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(500%);  */
+  filter: sepia(100%) hue-rotate(215deg) saturate(350%); 
+
 }
 
 footer{
