@@ -1,21 +1,25 @@
 body{
   position: relative;
-  /* background: hsl(233, 47%, 7%); */
-  font-family: 'Inter', sans-serif;
+  background: hsl(233, 47%, 7%);
+  font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
   color: white;
 }
 
 h1{
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: bold;
-  font-size: 30px
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  /* padding: 0 0 1em 0; */
 }
+ p{
+  line-height: 1.5em;
+ }
 
 
 .container{
   position: relative;
-  background: yellow;
+  /* background: yellow; */
   width: 100vw;
   height: 100vh;
 }
@@ -23,6 +27,7 @@ h1{
 .card{
   display: flex;
   position: absolute;
+  justify-content: space-between;
   top: 50%;
   left: 50%;
   /* transform: translateX(-50%); */
@@ -31,6 +36,48 @@ h1{
   height: 446px;
   background: hsl(244, 38%, 16%);
   border-radius: 15px;
+}
+
+.card-text{
+   position: relative;
+   width: 50%
+}
+
+.text-box {
+  position: relative;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* background: blue; */
+  width: 75%;
+  height: 65%;
+}
+
+.tb-title{
+  font-size: 39px;
+}
+
+.tb-paragraph{
+  padding: 5% 0;
+  font-size: 16px
+}
+
+.ct-list-title{
+  font-size: 25px;
+}
+
+.ct-list{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+}
+
+
+.ct-list li{
+  display: inline-block;
 }
 
 .card img{
@@ -42,5 +89,5 @@ footer{
   bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  color: pink;
+  color: lightcyan;
 }
