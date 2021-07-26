@@ -23,15 +23,17 @@ h1{
 
 .container{
   position: relative;
-  background: yellow;
+  /* background: yellow; */
   width: 100vw;
-  height: 100vh;
 }
 
 .card{
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 100%; */
+  grid-template-areas: "text img";
   position: absolute;
-  justify-content: space-between;
   top: 50%;
   left: 50%;
   /* transform: translateX(-50%); */
@@ -43,8 +45,9 @@ h1{
 }
 
 .card-text{
-   position: relative;
-   width: 50%
+  grid-area: text;
+  position: relative;
+  width: 100%
 }
 
 .text-box {
@@ -99,7 +102,12 @@ h1{
   height:
 } */
 
+.card-img{
+  text-align: right;
+}
+
 .card img{
+  grid-area: img;
   border-radius: 0 15px 15px 0;
   /* filter: sepia(100%) hue-rotate(190deg) saturate(500%);  */
   filter: sepia(100%) hue-rotate(230deg) saturate(350%) contrast(80%) brightness(65%);
@@ -115,7 +123,36 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
+  .container{
+    width: 100%;
+
+  }
+
+  .card{
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 780px;
+    /* grid-template-rows: 100%; */
+    grid-template-areas: "img"
+                         "text";
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, -50%);
+    background: hsl(244, 38%, 16%);
+    border-radius: 15px;
+  }
+
+
   .card img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  /* .card img{
     display: inline-block;
     position: absolute;
     top: 0;
@@ -140,5 +177,5 @@ footer{
     display: block;
     width: 100%;
 
-  }
+  } */
 }
