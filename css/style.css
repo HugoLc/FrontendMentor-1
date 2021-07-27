@@ -148,11 +148,37 @@ footer{
 
   .card-text{
     height: 540px;
+    text-align: center;
   }
 
   .text-box{
     top:40%;
     text-align: center;
+    width: 95%;
+    margin: auto;
+  }
+
+  .text-box h1{
+    font-size: 32px;
+  }
+
+  .tb-paragraph{
+    font-size: 17px;
+  }
+
+  .ct-list {
+    flex-direction: column;
+    position: unset;
+    width: 100%;
+  }
+
+  .ct-list .ct-list-title{
+    font-size: 25px;
+  }
+
+  .ct-list li{
+    display: block;
+    padding: 2.5% 0;
   }
 
   .card img{
