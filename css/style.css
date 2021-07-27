@@ -125,7 +125,7 @@ footer{
 @media screen and (max-width: 480px) {
   .container{
     width: 100%;
-
+    height: 965px;
   }
 
   .card{
@@ -135,10 +135,10 @@ footer{
     grid-template-areas: "img"
                          "text";
     width: 90%;
-    height: auto;
+    height: 780px;
     margin-top: 0;
     position: absolute;
-    top: 87%;
+    top: 45%;
     left: 50%;
     /* transform: translateX(-50%); */
     transform: translate(-50%, -50%);
@@ -146,11 +146,21 @@ footer{
     border-radius: 15px;
   }
 
+  .card-text{
+    height: 540px;
+  }
+
+  .text-box{
+    top:40%;
+    text-align: center;
+  }
 
   .card img{
     width: 100%;
+    height: 240px;
     border-radius: 15px 15px 0 0;
   }
+
 
   /* .card img{
     display: inline-block;
