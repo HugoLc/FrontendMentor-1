@@ -136,7 +136,7 @@ footer{
     grid-template-areas: "img"
                          "text";
     width: 90%;
-    height: 780px;
+    height: 800px;
     margin-top: 0;
     position: absolute;
     top: 45%;
@@ -145,6 +145,7 @@ footer{
     transform: translate(-50%, -50%);
     background: hsl(244, 38%, 16%);
     border-radius: 15px;
+    overflow:scroll;
   }
 
   .card-text{
