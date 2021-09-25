@@ -10,7 +10,7 @@ const infoCardParagrafo = `
     torquent per conubia nostra, per inceptos himenaeos.
 `
 
-const infoCard = new InfoCard(infoCardParagrafo);
+var infoCard = new InfoCard(infoCardParagrafo);
 console.log(infoCard);
 document.addEventListener('click', () => {
     if(infoCard) {infoCard.excluirInfoCard();}
