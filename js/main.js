@@ -9,6 +9,7 @@ const infoCardParagrafo = `
     mollis luctus id eget ante. Class aptent taciti sociosqu ad litora 
     torquent per conubia nostra, per inceptos himenaeos.
 `
+
 const infoCard = new InfoCard(infoCardParagrafo);
 console.log(infoCard);
 document.addEventListener('click', () => {
